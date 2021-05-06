@@ -1,15 +1,17 @@
 def Main():
-    print("Welcome To MadLibs Game!")
-    print("Please Choose for The Languages!")
-    print("1. Indonesia")
-    print("2. English")
-    languages = int(input("Choose 1 or 2: "))
+    while True:
+        print("Welcome To MadLibs Game!")
+        print("Please Choose for The Languages!")
+        print("1. Indonesia")
+        print("2. English")
+        languages = int(input("Choose 1 or 2: "))
 
-    if languages == 1:
-        MadLibIndoesia()
-    else:
-        MadLibEnglish()
-
+        
+        if languages == 1:
+            MadLibIndoesia()
+        else:
+            MadLibEnglish()
+       
 def MadLibIndoesia():
     animals = input("Masukkan Kata Hewan: ")
     profession = input("Masukkan Kata Profesi: ")
